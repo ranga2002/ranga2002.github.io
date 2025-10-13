@@ -1,5 +1,9 @@
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import {Navbar} from "@/components/Navbar"
+import {Footer} from "@/components/Footer"
+
+
 
 export const metadata = {
   title: "Sri Ranga Bharadwaj | AI/ML & Cloud Engineer",
@@ -11,7 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
