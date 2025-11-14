@@ -8,12 +8,12 @@ import { ThemeToggle } from "./ThemeToggle"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#education", label: "Education" },
+  { href: "/#achievements", label: "Achievements" },
+  { href: "/#contact", label: "Contact" },
   { href: "/resume", label: "Resume" },
 ]
 
