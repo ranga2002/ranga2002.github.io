@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { EducationCard } from "./EducationCard"
+import { EducationCard } from "../Card/EducationCard"
 import { educationData, certificationsData } from "@/data/education"
 import { Badge } from "@/components/ui/badge"
 
 export function EducationSection() {
   return (
-    <section className="py-20 px-6 container mx-auto">
+    <section id="education" className="py-20 px-6 container mx-auto">
       {/* Header */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

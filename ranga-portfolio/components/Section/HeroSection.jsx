@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
+    <section id="home" className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
       {/* Animated Heading */}
       <motion.h1
         initial={{ opacity: 0, y: 30 }}

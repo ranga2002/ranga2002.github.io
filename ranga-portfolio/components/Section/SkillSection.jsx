@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 
 export function SkillSection() {
   return (
-    <section className="py-20 px-6 container mx-auto">
+    <section id="skills" className="py-20 px-6 container mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Skills & Competencies
       </h2>

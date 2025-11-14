@@ -5,7 +5,7 @@ import { achievementsData } from "@/data/achievements"
 
 export function AchievementsSection() {
   return (
-    <section className="py-20 px-6 container mx-auto">
+    <section id="achievements" className="py-20 px-6 container mx-auto">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

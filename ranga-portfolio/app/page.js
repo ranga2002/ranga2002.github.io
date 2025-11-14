@@ -1,9 +1,11 @@
-import {HeroSection} from "@/components/HeroSection"
-import {ExperienceSection} from "@/components/ExperienceSection"
-import {ProjectSection} from "@/components/ProjectSection"
-import {SkillSection} from "@/components/SkillSection"
-import {EducationSection} from "@/components/EducationSection"
-import {AchievementsSection} from "@/components/AchievementsSection"
+import {HeroSection} from "@/components/Section/HeroSection"
+import {ExperienceSection} from "@/components/Section/ExperienceSection"
+import {ProjectSection} from "@/components/Section/ProjectSection"
+import {SkillSection} from "@/components/Section/SkillSection"
+import {EducationSection} from "@/components/Section/EducationSection"
+import {AchievementsSection} from "@/components/Section/AchievementsSection"
+import {ContactSection} from "@/components/Section/ContactSection"
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <SkillSection />
       <EducationSection />
       <AchievementsSection />
+      <ContactSection />
     </main>
   )
 }
