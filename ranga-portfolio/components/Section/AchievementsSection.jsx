@@ -24,7 +24,7 @@ export function AchievementsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative p-6 rounded-2xl border border-border bg-background/70 hover:shadow-lg transition-all"
+            className="relative p-6 rounded-2xl border border-border bg-background/70 transform transition-transform hover:-translate-y-1 hover:shadow-lg"
           >
             {/* Glowing Icon */}
             <div

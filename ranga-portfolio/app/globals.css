@@ -51,13 +51,14 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  /* Brand accent: deep indigo/tech blue for CTAs and active nav */
+  --primary: #4f46e5; /* indigo-600 */
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
+  --accent: #2563eb; /* blue-600 */
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.929 0.013 255.508);
@@ -79,19 +80,20 @@
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
+  /* Softer very-dark-gray background for reduced eye strain */
+  --background: #0b1220; /* very dark gray-blue */
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
+  --primary: #4f46e5; /* indigo-600 */
   --primary-foreground: oklch(0.208 0.042 265.755);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
   --muted: oklch(0.279 0.041 260.031);
   --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
+  --accent: #2563eb; /* blue-600 */
   --accent-foreground: oklch(0.984 0.003 247.858);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
@@ -118,6 +120,41 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Typography and subtle link styles */
+@layer base {
+  h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700;
+    line-height: 1.08;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.25rem; /* text-4xl */
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  a {
+    text-underline-offset: 4px;
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+  }
+
+  a:hover {
+    color: var(--primary);
+    text-decoration-color: var(--accent);
   }
 }
 

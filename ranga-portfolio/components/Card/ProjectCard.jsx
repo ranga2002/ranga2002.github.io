@@ -14,7 +14,7 @@ export function ProjectCard({ project }) {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <Card className="hover:shadow-md transition-shadow border border-border bg-background/70">
+  <Card className="transform transition-transform transition-shadow hover:-translate-y-1 hover:shadow-lg border border-border bg-background/70">
         <CardHeader>
           <CardTitle className="text-lg font-semibold">{project.title}</CardTitle>
         </CardHeader>

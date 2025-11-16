@@ -20,7 +20,7 @@ export function EducationCard({ edu, index }) {
       />
 
       {/* Card */}
-      <div className="bg-background/60 border border-border rounded-xl p-5 mb-8 hover:shadow-md transition-all">
+  <div className="bg-background/60 border border-border rounded-xl p-5 mb-8 transform transition-transform hover:-translate-y-1 hover:shadow-md">
         <h3 className="text-lg font-semibold">{edu.degree}</h3>
         <p className="text-sm text-muted-foreground mb-1">{edu.institution}</p>
         <p className="text-xs text-primary mb-3">{edu.period}</p>

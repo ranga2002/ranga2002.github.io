@@ -10,7 +10,7 @@ export function ExperienceCard({ exp }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="p-6 rounded-2xl border border-border bg-background/60 shadow-sm hover:shadow-md transition-shadow"
+      className="transform transition-transform transition-shadow p-6 rounded-2xl border border-border bg-background/60 shadow-sm hover:-translate-y-1 hover:shadow-md"
     >
       <h3 className="text-xl font-semibold">{exp.role}</h3>
       <p className="text-sm text-muted-foreground mb-2">
