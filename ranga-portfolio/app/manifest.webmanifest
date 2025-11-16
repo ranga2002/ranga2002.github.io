@@ -1,0 +1,17 @@
+{
+  "name": "Sri Ranga Bharadwaj | Portfolio",
+  "short_name": "Ranga.dev",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#4f46e5",
+  "description": "Portfolio showcasing AI, ML, and Web Development projects.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
