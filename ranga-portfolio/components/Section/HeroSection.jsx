@@ -98,11 +98,6 @@ export function HeroSection() {
                 Book a call
               </Button>
             </Link>
-            <Link href="/resume">
-              <Button size="lg" variant="ghost">
-                View resume
-              </Button>
-            </Link>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

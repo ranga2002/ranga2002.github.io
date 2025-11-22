@@ -11,7 +11,6 @@ import { ResumeHighlightSection } from "@/components/Section/ResumeHighlightSect
 export default function Home() {
   return (
     <main>
-      {/* <h1 className="text-4xl font-bold">Sri Ranga Bharadwaj Portfolio</h1> */}
       <HeroSection />
       <ResumeHighlightSection />
       <ExperienceSection />
