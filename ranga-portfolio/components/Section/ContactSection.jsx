@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, Github, Linkedin } from "lucide-react"
 import Link from "next/link"
@@ -8,6 +9,18 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 
 export function ContactSection() {
+  const [redirectUrl, setRedirectUrl] = useState(() => {
+    const envBase = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "")
+    return envBase ? `${envBase}/thank-you` : ""
+  })
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const origin = window.location.origin.replace(/\/$/, "")
+      setRedirectUrl(`${origin}/thank-you`)
+    }
+  }, [])
+
   return (
     <section id="contact" className="py-20 px-6">
       <motion.div
@@ -106,6 +119,7 @@ export function ContactSection() {
               <input type="hidden" name="_subject" value="New message from your portfolio!" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_next" value={redirectUrl} />
 
               {/* Inputs */}
               <div>
