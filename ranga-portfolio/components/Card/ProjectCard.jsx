@@ -14,12 +14,20 @@ export function ProjectCard({ project }) {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-  <Card className="transform transition-transform transition-shadow hover:-translate-y-1 hover:shadow-lg border border-border bg-background/70">
-        <CardHeader>
-          <CardTitle className="text-lg font-semibold">{project.title}</CardTitle>
+      <Card className="group transform transition-transform hover:-translate-y-1 hover:shadow-lg border border-border/80 bg-background/80">
+        <CardHeader className="flex items-start justify-between gap-3">
+          <div>
+            <CardTitle className="text-lg font-semibold leading-snug">{project.title}</CardTitle>
+            <p className="text-sm text-muted-foreground">#{project.tech[0] ?? "build"}</p>
+          </div>
+          {project.live && (
+            <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+              Live
+            </span>
+          )}
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
             {project.description}
           </p>
 
@@ -33,12 +41,12 @@ export function ProjectCard({ project }) {
           </div>
 
           {/* Links */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-sm">
             {project.github && (
               <Link
                 href={project.github}
                 target="_blank"
-                className="flex items-center gap-1 text-sm hover:text-primary transition-colors"
+                className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-primary"
               >
                 <Github size={16} /> Code
               </Link>
@@ -47,7 +55,7 @@ export function ProjectCard({ project }) {
               <Link
                 href={project.live}
                 target="_blank"
-                className="flex items-center gap-1 text-sm hover:text-primary transition-colors"
+                className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-primary"
               >
                 <ExternalLink size={16} /> Live
               </Link>

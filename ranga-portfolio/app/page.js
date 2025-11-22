@@ -5,6 +5,7 @@ import {SkillSection} from "@/components/Section/SkillSection"
 import {EducationSection} from "@/components/Section/EducationSection"
 import {AchievementsSection} from "@/components/Section/AchievementsSection"
 import {ContactSection} from "@/components/Section/ContactSection"
+import { ResumeHighlightSection } from "@/components/Section/ResumeHighlightSection"
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       {/* <h1 className="text-4xl font-bold">Sri Ranga Bharadwaj Portfolio</h1> */}
       <HeroSection />
+      <ResumeHighlightSection />
       <ExperienceSection />
       <ProjectSection />
       <SkillSection />

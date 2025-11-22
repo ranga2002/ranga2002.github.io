@@ -16,11 +16,11 @@ export function EducationCard({ edu, index }) {
 
       {/* Dot */}
       <div
-        className={`absolute left-[7px] top-3 w-3 h-3 rounded-full bg-gradient-to-r ${edu.color}`}
+        className={`absolute left-4 top-0 w-3 h-3 -translate-x-1/2 transform rounded-full bg-gradient-to-r ${edu.color}`}
       />
 
       {/* Card */}
-  <div className="bg-background/60 border border-border rounded-xl p-5 mb-8 transform transition-transform hover:-translate-y-1 hover:shadow-md">
+      <div className="bg-background/60 border border-border rounded-xl p-5 mb-8 transform transition-transform hover:-translate-y-1 hover:shadow-md">
         <h3 className="text-lg font-semibold">{edu.degree}</h3>
         <p className="text-sm text-muted-foreground mb-1">{edu.institution}</p>
         <p className="text-xs text-primary mb-3">{edu.period}</p>
