@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export const metadata = {
   title: "Message received | Sri Ranga Bharadwaj",
-  description: "Thanks for reaching out — your note is in my inbox and I'll respond shortly.",
+  description: "Thanks for reaching out — your note is in my inbox and I&apos;ll respond shortly.",
 }
 
 export default function ThankYouPage() {
@@ -34,7 +34,7 @@ export default function ThankYouPage() {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                You'll get a confirmation and a personal reply from me (no bots in between).
+                You&apos;ll get a confirmation and a personal reply from me (no bots in between).
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
@@ -46,7 +46,7 @@ export default function ThankYouPage() {
           <div className="rounded-xl border border-border/80 bg-background/80 p-5 shadow-sm backdrop-blur">
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary">Want to talk sooner?</p>
             <p className="text-muted-foreground">
-              Drop me a line directly and I'll do my best to respond the same day.
+              Drop me a line directly and I&apos;ll do my best to respond the same day.
             </p>
             <Link
               href="mailto:chakilamsriranga@gmail.com"
